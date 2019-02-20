@@ -8,12 +8,12 @@
 .container div {
     /*background: #6B0F9C;*/
     box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
-    color: black;
+    color: white;
     border: 1px #ccc solid;
     padding: 10px;
     text-align: center;
     font-family: "MorePro-Medium", serif;
-    /*text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);*/
+    text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
 
 }
 
