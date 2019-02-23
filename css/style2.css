@@ -64,3 +64,58 @@
     background-image: url(/photo/davet1.png);
     /*url(https://source.unsplash.com/1500x1500/?food,organic);*/
 }
+
+@media(max-width:375px){
+    .container{
+      display:flex;
+      flex-direction: column;
+      height: 97vh;
+      width: 100%;
+      /* min-height: 100vh; */
+      
+      /*
+      align-items:flex-start;
+      align-items:flex-end;
+      align-items:center;
+      
+      flex-direction:column;
+      */
+    }
+    .container div {
+        border: 1px #ccc solid;
+        padding: 75px;
+
+      }
+      .box {
+        transition:
+        font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+        flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
+        background 0.2s;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        background-size: cover;
+        background-position: center;
+      }
+      
+      .box-1{
+        flex:1;
+        order:1;
+        /* background-image: url(https://source.unsplash.com/1500x1500/?food,gastronomy); */
+        background-image: url(/photo/bir.jpg);
+      }
+      
+      .box-2{
+        flex:1;
+        order:2;
+        /* background-image: url(https://source.unsplash.com/1500x1500/?food,organic); */
+        background-image: url(/photo/ogle1.png);
+      }
+      
+      .box-3{
+        flex:1;
+        order: 3;
+        /* background-image: url(https://source.unsplash.com/1500x1500/?food,blue); */
+        background-image: url(/photo/davet1.png);
+      }
+    }
