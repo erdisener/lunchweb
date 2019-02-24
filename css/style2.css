@@ -1,121 +1,122 @@
 .container {
-    display: flex;
-    flex-direction: row;
-    min-height: 100vh;
-    overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
 .container div {
-    /*background: #6B0F9C;*/
-    box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
-    color: white;
-    border: 1px #ccc solid;
-    padding: 10px;
-    text-align: center;
-    font-family: "MorePro-Medium", serif;
-    text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
-
+  /*background: #6B0F9C;*/
+  box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px #ccc solid;
+  padding: 10px;
+  text-align: center;
+  font-family: "MorePro-Medium", serif;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
 }
 
 .box {
-    transition:
-        font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
-        flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
-        background 0.2s;
-    font-size: 40px;
-    align-items: center;
-    background-size: cover;
-    background-position: center;
-    flex: 1;
-    justify-content: center;
-    display: flex;
+  transition: 0.2s;
+  font-size: 40px;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+  justify-content: center;
+  display: flex;
+  cursor: pointer;
+}
+
+.box:hover {
+  opacity: 0.5;
 }
 
 .box.open {
-    flex: 5;
-    font-size: 50px;
+  flex: 5;
+  font-size: 50px;
 }
 
-.box>* {
-    margin: 0;
-    width: 100%;
-    transition: transform 0.5s;
-    flex: 1 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.box > * {
+  margin: 0;
+  width: 100%;
+  transition: transform 0.5s;
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
 
 .box-1 {
-    order: 1;
-    background-image: url(/photo/bir.jpg);
-    /*url(https://source.unsplash.com/1500x1500/?food,gastronomy);*/
+  order: 1;
+  background-image: url(/photo/bir.jpg);
+  /*url(https://source.unsplash.com/1500x1500/?food,gastronomy);*/
 }
 
 .box-2 {
-    order: 2;
-    background-image: url(/photo/ogle1.png);
-    /*url(https://source.unsplash.com/1500x1500/?food,vegan);*/
+  order: 2;
+  background-image: url(/photo/ogle1.png);
+  /*url(https://source.unsplash.com/1500x1500/?food,vegan);*/
 }
 
 .box-3 {
-    order: 3;
-    background-image: url(/photo/davet1.png);
-    /*url(https://source.unsplash.com/1500x1500/?food,organic);*/
+  order: 3;
+  background-image: url(/photo/davet1.png);
+  /*url(https://source.unsplash.com/1500x1500/?food,organic);*/
 }
 
-@media(max-width:375px){
-    .container{
-      display:flex;
-      flex-direction: column;
-      height: 97vh;
-      width: 100%;
-      /* min-height: 100vh; */
-      
-      /*
+@media (max-width: 468px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 97vh;
+    width: 100%;
+    /* min-height: 100vh; */
+
+    /*
       align-items:flex-start;
       align-items:flex-end;
       align-items:center;
       
       flex-direction:column;
       */
-    }
-    .container div {
-        border: 1px #ccc solid;
-        padding: 75px;
+  }
+  .container div {
+    border: 1px #ccc solid;
+    padding: 75px;
+  }
+  .box {
+    transition: 0.2s;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+  }
 
-      }
-      .box {
-        transition:
-        font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
-        flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
-        background 0.2s;
-        text-align: center;
-        color: white;
-        font-size: 20px;
-        background-size: cover;
-        background-position: center;
-      }
-      
-      .box-1{
-        flex:1;
-        order:1;
-        /* background-image: url(https://source.unsplash.com/1500x1500/?food,gastronomy); */
-        background-image: url(/photo/bir.jpg);
-      }
-      
-      .box-2{
-        flex:1;
-        order:2;
-        /* background-image: url(https://source.unsplash.com/1500x1500/?food,organic); */
-        background-image: url(/photo/ogle1.png);
-      }
-      
-      .box-3{
-        flex:1;
-        order: 3;
-        /* background-image: url(https://source.unsplash.com/1500x1500/?food,blue); */
-        background-image: url(/photo/davet1.png);
-      }
-    }
+  .box:hover {
+    opacity: 0.5;
+  }
+
+  .box-1 {
+    flex: 1;
+    order: 1;
+    /* background-image: url(https://source.unsplash.com/1500x1500/?food,gastronomy); */
+    background-image: url(/photo/bir.jpg);
+  }
+
+  .box-2 {
+    flex: 1;
+    order: 2;
+    /* background-image: url(https://source.unsplash.com/1500x1500/?food,organic); */
+    background-image: url(/photo/ogle1.png);
+  }
+
+  .box-3 {
+    flex: 1;
+    order: 3;
+    /* background-image: url(https://source.unsplash.com/1500x1500/?food,blue); */
+    background-image: url(/photo/davet1.png);
+  }
+}
